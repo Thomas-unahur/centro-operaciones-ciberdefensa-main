@@ -13,8 +13,12 @@ public class MotorSiem {
     private List<Alerta> alertasPendientes;
     private EstrategiaEnriquecimiento estrategiaEnriquecimiento;
     
-    public MotorSiem(List<Alerta> alertasPendientes, EstrategiaEnriquecimiento estrategiaEnriquecimiento) {
+    public MotorSiem(EstrategiaEnriquecimiento estrategiaEnriquecimiento) {
         this.alertasPendientes = new ArrayList<>();
+        this.estrategiaEnriquecimiento = estrategiaEnriquecimiento;
+    }
+
+    public void cambiarEstrategia(EstrategiaEnriquecimiento estrategiaEnriquecimiento){
         this.estrategiaEnriquecimiento = estrategiaEnriquecimiento;
     }
     

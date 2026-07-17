@@ -18,7 +18,7 @@ public class AlertaTest {
         assertEquals("192.168.1.50", alerta.getIpOrigen());
         assertEquals(45, alerta.getSeveridadBase());
         assertEquals(120, alerta.getTiempoDeDeteccion());
-        assertFalse(alerta.esCritica(), "una severidad de 45 no es critica");
+        assertFalse(alerta.esCritica());
     }
 
     @Test
