@@ -5,9 +5,9 @@
 
 ## **⚙️ Datos necesarios y obligatorios a completar.**
 
-* **APELLIDO, NOMBRE**:  
-* **COMISIÓN**:  
-* **DNI**:
+* **APELLIDO, NOMBRE**: Ortuzar, Thomas 
+* **COMISIÓN**: 03  
+* **DNI**: 42038065
 
 ## **📝 Consideraciones Iniciales y Criterio de Evaluación.**
 
