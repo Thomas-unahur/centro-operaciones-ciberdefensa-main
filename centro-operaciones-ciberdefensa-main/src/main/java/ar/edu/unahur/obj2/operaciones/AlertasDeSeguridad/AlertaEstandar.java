@@ -5,6 +5,7 @@ public class AlertaEstandar implements Alerta{
     private String ipOrigen;
     private Integer severidadBase;
     private Integer tiempoDeDeteccion;
+    
     public AlertaEstandar(String id, String ipOrigen, Integer severidadBase, Integer tiempoDeDeteccion) {
         
         if(severidadBase < 0){
