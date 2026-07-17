@@ -6,6 +6,6 @@ public class EspAmenazasCriticas implements CriterioAlerta{
 
     @Override
     public Boolean esAsignable(AlertaEstandar alerta){
-        return alerta.getNivelSeveridad() > 75;
+        return alerta.getSeveridadBase() > 75;
     }
 }

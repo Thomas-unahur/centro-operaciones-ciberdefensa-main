@@ -17,16 +17,19 @@ public class AlertaEstandar implements Alerta{
     public Boolean esCritica(){
         return this.severidadBase > 90;
     }
-
+    @Override
     public String getId() {
         return id;
     }
+    @Override
     public String getIpOrigen() {
         return ipOrigen;
     }
+    @Override
     public Integer getSeveridadBase() {
         return severidadBase;
     }
+    @Override
     public Integer getTiempoDeDeteccion() {
         return tiempoDeDeteccion;
     }
