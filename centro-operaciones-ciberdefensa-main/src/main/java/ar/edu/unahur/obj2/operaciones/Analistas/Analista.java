@@ -21,6 +21,10 @@ public class Analista {
         return this.historialDeAlertas;
     }
 
+    public void agregarAlerta(Alerta alerta){
+        historialDeAlertas.add(alerta);
+    }
+
     public void setCriterioAlerta(CriterioAlerta criterioAlerta) {
         this.criterioAlerta = criterioAlerta;
     }

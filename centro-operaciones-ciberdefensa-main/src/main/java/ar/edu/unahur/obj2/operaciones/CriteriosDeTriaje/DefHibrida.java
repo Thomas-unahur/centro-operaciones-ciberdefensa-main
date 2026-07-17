@@ -1,5 +1,6 @@
 package ar.edu.unahur.obj2.operaciones.CriteriosDeTriaje;
 
+import ar.edu.unahur.obj2.operaciones.AlertasDeSeguridad.Alerta;
 import ar.edu.unahur.obj2.operaciones.AlertasDeSeguridad.AlertaEstandar;
 
 public class DefHibrida implements CriterioAlerta{
@@ -13,7 +14,7 @@ public class DefHibrida implements CriterioAlerta{
     }
 
     @Override
-    public Boolean esAsignable(AlertaEstandar alerta){
+    public Boolean esAsignable(Alerta alerta){
         return espAmenazasCriticas.esAsignable(alerta) || espInfraestructura.esAsignable(alerta);
     }
 }
