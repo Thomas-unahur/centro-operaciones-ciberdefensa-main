@@ -6,10 +6,26 @@ public class AlertaEstandar implements Alerta{
     private Integer severidadBase;
     private Integer tiempoDeDeteccion;
     public AlertaEstandar(String id, String ipOrigen, Integer severidadBase, Integer tiempoDeDeteccion) {
+        
+        if(severidadBase < 0){
+            throw new AlertaInvalidaException("no se puede tener severidad negativa");
+        }
+
+        if(ipOrigen.isEmpty() || ipOrigen == null){
+            throw new AlertaInvalidaException("no se puede tener una ip vacia");
+        }
+
+        if(ipOrigen.isEmpty() || ipOrigen == null){
+            throw new AlertaInvalidaException("el codigo no puede estar vacio");
+        }
+        
+        
         this.id = id;
         this.ipOrigen = ipOrigen;
         this.severidadBase = severidadBase;
         this.tiempoDeDeteccion = tiempoDeDeteccion;
+
+
     }
 
 

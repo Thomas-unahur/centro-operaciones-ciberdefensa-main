@@ -3,7 +3,6 @@ package ar.edu.unahur.obj2.operaciones.CriteriosDeTriaje;
 import java.util.List;
 
 import ar.edu.unahur.obj2.operaciones.AlertasDeSeguridad.Alerta;
-import ar.edu.unahur.obj2.operaciones.AlertasDeSeguridad.AlertaEstandar;
 
 public class EspInfraestructura implements CriterioAlerta{
 
