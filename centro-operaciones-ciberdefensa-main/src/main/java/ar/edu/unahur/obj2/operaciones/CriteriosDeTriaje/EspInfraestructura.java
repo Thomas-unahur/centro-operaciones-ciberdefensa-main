@@ -2,7 +2,7 @@ package ar.edu.unahur.obj2.operaciones.CriteriosDeTriaje;
 
 import java.util.List;
 
-import ar.edu.unahur.obj2.operaciones.Alerta;
+import ar.edu.unahur.obj2.operaciones.AlertasDeSeguridad.AlertaEstandar;
 
 public class EspInfraestructura implements CriterioAlerta{
 
@@ -14,7 +14,7 @@ public class EspInfraestructura implements CriterioAlerta{
     }
 
     @Override
-    public Boolean esAsignable(Alerta alerta){
+    public Boolean esAsignable(AlertaEstandar alerta){
         return  listaIpsCriticas.contains(alerta.getIpOrigen());
     }
 }
